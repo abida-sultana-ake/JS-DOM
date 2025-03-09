@@ -1,0 +1,13 @@
+const person = {
+    name : "Aka",
+    age : 24,
+    friends : ["Amena", "Moniza", "Tamanna", "Kongkon"]
+}
+
+// Normal to JSON
+const newPerson = JSON.stringify(person);
+console.log(newPerson);
+
+// JSON to Normal
+const newPerson2 = JSON.parse(newPerson);
+console.log(newPerson2);
