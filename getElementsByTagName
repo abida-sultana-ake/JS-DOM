@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        h1{
+            color: cornflowerblue;
+            background-color: rgba(87, 31, 54, 0.26);
+            margin: 16px;
+            padding: 14px;
+            border: 3px solid cadetblue;
+            border-radius: 4px;
+            text-align: center;
+        }
+        div{
+            color: gray;
+            margin: 16px;
+            padding: 14px;
+            border: 3px solid rgb(238, 18, 18);
+            border-radius: 4px;
+            text-align: left;
+        }
+        li{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Manipulation</h1>
+    <h1>Hello</h1>
+    <div>
+        <p>The HTML DOM is a standard object model and programming interface for HTML. It defines:</p>
+        <ul>
+            <li>The HTML elements as objects</li>
+            <li>The properties of all HTML elements</li>
+            <li>The methods to access all HTML elements</li>
+            <li>The events for all HTML elements</li>
+        </ul>
+    </div>
+
+    <script src="./getElementsByTagName.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+Js
+
+const liCollection = document.getElementsByTagName('li');
+//console.log(liCollection);
+
+for (const li of liCollection)
+{
+    console.log(li);
+    console.log(li.innerText);
+    console.log(li.innerHTML);
+}
+
+const h1Collection = document.getElementsByTagName('h1');
+
+for(const h1 of h1Collection)
+{
+    console.log(h1);
+    console.log(h1.innerText);
+    console.log(h1.innerHTML);
+}
+
